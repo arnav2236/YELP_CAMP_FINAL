@@ -17,7 +17,7 @@ app.use(bodyparser.urlencoded({extended:true}));
 
 var mongoose=require("mongoose");
 // mongoose.connect(process.env.DATABASEURL);
-// mongodb+srv://Avinash2609:Avinash@5181@cluster0.qa8fk.mongodb.net/YelpCamp?retryWrites=true&w=majority
+
 // mongodb://localhost:27017/yelpcamp_v10
 
 // mongoose.connect("mongodb://localhost:27017/yelpcamp_v10")
@@ -25,7 +25,7 @@ var mongoose=require("mongoose");
 mongoose.connect("mongodb+srv://yelpcamp:AK47AK47@cluster0.wzjxs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
 
 // const MongoClient = require('mongodb').MongoClient;
-// const uri = "mongodb+srv://Avinash2609:Avinash@5181@cluster0.qa8fk.mongodb.net/YelpCamp?retryWrites=true&w=majority";
+
 // const client = new MongoClient(uri, { useNewUrlParser: true });
 // client.connect(err => {
 //   const collection = client.db("test").collection("devices");
