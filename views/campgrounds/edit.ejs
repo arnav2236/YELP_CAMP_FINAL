@@ -1,0 +1,16 @@
+<%- include ("../partials/header") %>
+
+<div class="container mt-5">
+    <div class="container jumbotron">
+        <h1>Editing a <%= campground.name %></h1>
+    </div>
+<form action="/campgrounds/<%= campground._id %>?_method=PUT" method="POST">
+    <input class="form-control" type="text" name=camp[name] placeholder="Enter name" value="<%= campground.name %>">
+    <input class="form-control mt-1" type="text" name=camp[image] placeholder="Enter_url" value="<%= campground.image %>"> 
+    <input class="form-control mt-1" type="number" min="0.01" step="0.01" name=camp[price] placeholder="Enter_price" value="<%= campground.price %>">
+    <input class="form-control mt-1" type="text" name=camp[description] placeholder="Enter_Description" value="<%= campground.description %>">
+    <button class="btn btn-sm btn-success mt-3">Submit</button>
+</form>
+<a href="/campgrounds/<%= campground._id %>" class="btn btn-sm btn-info">Go back</a>
+    <%- include("../partials/footer") %>
+</div>

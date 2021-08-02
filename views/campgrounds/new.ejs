@@ -1,0 +1,40 @@
+<%- include ("../partials/header") %>
+
+<div class="container mt-5">
+    <div class="container jumbotron">
+        <h1>Adding a new Campground</h1>
+        <p>Here, you can publish your own campground</p>
+    </div>
+<form action="/campgrounds" method="POST">
+    <input class="form-control" type="text" name="name" placeholder="Enter name for your campground">
+
+        <div class="form-inline">
+            <p class="btn btn-secondary m-0 mt-1">Choose an image for your campground: </p>
+        <select class="dropdown show ml-2" name="image">
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <option>/pics/ali-diaz-Tx7_T5TZNrY-unsplash.jpg</option>
+                <option>/pics/blake-wisz-TcgASSD5G04-unsplash.jpg</option>
+                <option>/pics/carolus-abi-aG5YyxZUCJg-unsplash.jpg</option>
+                <option>/pics/chang-duong-n1cbiw5wc_I-unsplash.jpg</option>  
+                <option>/pics/chris-holder-uY2UIyO5o5c-unsplash.jpg</option>
+                <option>/pics/chris-schog-EnCaUE4QNOw-unsplash.jpg</option>
+                <option>/pics/david-schultz-f5sdemaT7XE-unsplash.jpg</option>
+                <option>/pics/dino-reichmuth-5Rhl-kSRydQ-unsplash.jpg</option>
+                <option>/pics/jorgen-hendriksen-xNpM3R6rR9A-unsplash.jpg</option>
+                <option>/pics/pawan-sharma-aWZjpucxlgE-unsplash.jpg</option>
+                <option>/pics/randy-fath-9c51S3H8AFs-unsplash.jpg</option>
+                <option>/pics/rishabh-pandoh-m1PFxGQ-5x0-unsplash.jpg</option>
+                <option>/pics/roya-ann-miller-Rdsc2L517iQ-unsplash.jpg</option>
+            </div>
+        </select >
+        </div>
+
+    <!-- <input class="form-control mt-1" type="text" name="image" placeholder="You can give a link of any image on internet"> -->
+    <input class="form-control mt-1" type="number" min="0.01" step="0.01" name="price" placeholder="Enter price for your campground">
+    <input class="form-control mt-1" type="text" name="description" placeholder="Enter description for your campground">
+    <button class="btn btn-sm btn-success mt-3">Submit</button>
+</form>
+<a href="/campgrounds" class="btn btn-sm btn-info">Go back</a>
+    <%- include("../partials/footer") %>
+</div>
